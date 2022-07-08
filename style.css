@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.test {
+    background: lightblue;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: rgb(231, 231, 231);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchbar {
+    height: 1.6rem;
+    width: 10rem;
+    border-radius: .6rem;
+    border: none;
+    padding-left: 2rem;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+.heart, .profile {
+    margin-left: 1rem;
+}
+
+.logo {
+    color: crimson;
+    margin-right: 1rem;
+}
+
+.heart {
+    color: red;
+}
+
+.profile {
+    color: blue;
+}
+
+/* Navbar */
+.sticky-bar {
+    position: sticky;
+    top: 0;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: rgb(190, 190, 190);
+}
+
+.navigation li {
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Main */
+.container {
+    width: 1000px;
+    margin: auto auto;
+}
+
+.recipe-container {
+    display: flex;
+    padding: 30px;
+    margin: 10px 0;
+    background: whitesmoke;
+    box-sizing: border-box;
+}
+
+.recipe-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.recipe-name, .recipe-description {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.recipe-description {
+    padding-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 10px;
+    padding-right: 5rem;
+}
+
+.recipes {
+    position: absolute;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background: blue;
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.recipes:hover .submenu {
+    display: block;
+    position: relative;
+}
